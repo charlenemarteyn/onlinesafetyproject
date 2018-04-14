@@ -188,9 +188,11 @@ a:active {
 
 
 /* start of computer section */
-.svgStyle{
-    height:200px;
-
+.svgTitle{
+    width:60vw;
+    margin-bottom: 5%;
+    margin-left:19vw;
+    margin-right:auto;
 }
 
 #sectionComputer{
@@ -246,7 +248,7 @@ a:active {
 }
 
 .text-styling {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     font-family: var(--20century);
     font-weight: 400;
