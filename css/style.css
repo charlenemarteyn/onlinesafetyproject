@@ -6,9 +6,7 @@
 
 :root {
     --20thcentery-font: '20thcentery', sans-serif;
-    --garamond-font: 'EB Garamond', serif;
     --black-color: #212323;
-    --brown-accent-color: #bd9e6e;
 }
 
 body {
@@ -18,7 +16,6 @@ body {
 #background{
     width:100vw;
     height:100vh;
-    background-color:greenyellow;
 }
 
 /* THIS IS THE MOBILE VERSION */
@@ -87,7 +84,7 @@ label {
     font-size: 1.2em;
 }
 
-/*to change */
+/*to change
 .nav a:hover {
     color: var(--brown-accent-color);
 }
@@ -101,9 +98,8 @@ a:active {
 }
 
 .active-page {
-    border-bottom: 1px solid var(--brown-accent-color);
-}
-/*to change */
+    border-bottom: 1px solid blue;
+}*/
 
 #main-title-desktop{
     display:none;
@@ -114,10 +110,11 @@ a:active {
     width:288px;
 }
 
+
 /* Arrow */
 
 .fa-chevron-down {
-    margin-top: 12px;
+    margin-top: 75%;
 }
 
 @keyframes bounce {
@@ -146,7 +143,7 @@ a:active {
 }
 
 .arrow {
-    margin-left: 37vw;
+    margin-left: 45%;
     margin-right:auto;
     width: 40px;
     cursor: pointer;
@@ -166,11 +163,11 @@ a:active {
 #look{
     font-size:1.3em;
     font-family: var(--20thcentery-font);
-    margin-top:6vh;
-    margin-bottom:6vh;
-    margin-left:23vw;
+    margin-top:13%;
+    margin-bottom:13%;
+    margin-left:32%;
     padding:0.5em;
-    margin-right:23vw;
+    margin-right:auto;
     border: 2px solid black;
     color:#ff5a3d;
 }
@@ -198,31 +195,26 @@ a:active {
 #sectionComputer{
     height:100vh;
     width:100vw;
-    background-color: bisque;
 }
 
 #sectionEmail{
     height:100vh;
     width:100vw;
-    background-color: pink;
 }
 
 #sectionPassword{
     height:100vh;
     width:100vw;
-    background-color: indianred;
 }
 
 #sectionShop{
     height:100vh;
     width:100vw;
-    background-color:purple;
 }
 
 #sectionWot{
     height:100vh;
     width:100vw;
-    background-color:coral;
 }
 
 #computerAnim,
@@ -333,27 +325,8 @@ footer {
         letter-spacing: 1px;
     }
 
-    #background-image-index-desktop {
-        background-image: url(../img/background-img/guitar.jpeg);
-        width: 100vw;
-        height: 100vh;
-        background-size: cover;
-    }
-    #background-image-concerts-desktop {
-        background-image: url(../img/background-img/concert3.jpg);
-        width: 100vw;
-        height: 100vh;
-        background-size: cover;
-    }
-
-    /*ABOUT PAGE DESKTOP*/
-    .buttons-about {
-        grid-area: buttons;
-    }
-
     .fa-chevron-down {
         margin-top: 20vh;
-        margin-left:40vw;
     }
     .main-about-box {
         display: flex;
@@ -364,32 +337,17 @@ footer {
         margin-bottom: 60px;
     }
     .main-about-box-desktop div {
-        width: 50%;
+        width: 80%;
         margin: 0 auto;
     }
     .main-about-box-desktop div img {
         display: block;
     }
-    .main-about-box-desktop .about-text {
-        width: 88%;
-        margin-top: 15%;
-    }
+
     #title-main-desktop {
         margin-top: 10vh;
     }
-    #about-child-guitar,
-    #about-jonas-now {
-        width: 80%;
-        margin-left: 10%;
-    }
-    #about-child-2nd {
-        width: 80%;
-    }
-    #about-child-guitar,
-    #about-jonas-now,
-    #about-child-2nd {
-        margin-top: 15%;
-    }
+
 
     /*FOOTER*/
     #footer {
@@ -400,6 +358,32 @@ footer {
         margin-left: 60px;
         width:900px;
     }
+    #main-title{
+    margin-left: 25%;
+    width:60%;
+    }
+
+    #look{
+    font-size:1.8em;
+    margin-top:8vh;
+    margin-bottom:8%;
+    margin-left:48.5%;
+    margin-right:auto;
+}
+
+#learn{
+    font-size:1.8em;
+    margin-top:5%;
+    margin-left:30%;
+    margin-right:20%;
+}
+
+.fa-chevron-down {
+    margin-top: 1px;
+    margin-left: 7vw;
+
+}
+
 }
 
 #background{
