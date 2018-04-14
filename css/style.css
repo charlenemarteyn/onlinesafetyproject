@@ -7,21 +7,22 @@
 :root {
     --20thcentery-font: '20thcentery', sans-serif;
     --garamond-font: 'EB Garamond', serif;
-    --lightgrey-color: #d2d2d2;
+    --black-color: #212323;
     --brown-accent-color: #bd9e6e;
 }
 
 body {
-    background-color: white;
+    background-color: #fcfcfc;
 }
 
-@font-face {
-    font-family: goodNightFont;
-    src: url(../fonts/Good-night.ttf);
+#background{
+    width:100vw;
+    height:100vh;
 }
 
+/* THIS IS THE MOBILE VERSION */
 
-/*NAVBAR + BURGER MENU*/
+/* start of the header */
 
 .opacity {
     background-color: rgba(0, 0, 0, 0.9);
@@ -38,13 +39,15 @@ body {
 label {
     z-index: 10;
     font-size: 2em;
+    margin-top:2vh;
     margin-bottom: 2vh;
-    margin-left: 37vw;
+    margin-left: 43vw;
     color: #ff5a3d;
 }
 
 #logo {
-    width: 25%;
+    width: 40%;
+    margin-top:1vh;
     margin-left:3vw;
 }
 
@@ -92,42 +95,28 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    color: var(--lightgrey-color);
+    color: var(--brown-accent-color);
     text-decoration: none;
 }
 
 .active-page {
     border-bottom: 1px solid var(--brown-accent-color);
 }
+/*to change */
 
-
-/*END OF NAVIGATION*/
-
-.background-image {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../img/simon-abrams-286276-unsplash.jpg);
-    background-size: cover;
+#main-title-desktop{
+    display:none;
 }
 
-/*ABOUT PAGE*/
-
-.main-about-box {
-    margin-bottom: 60px;
+#main-title{
+    margin-left: 3vw;
+    width:288px;
 }
 
-#about-child-guitar,
-#about-child-2nd,
-#about-jonas-now {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 15%;
-    width: 40%;
-}
-
+/* Arrow */
 
 .fa-chevron-down {
-    margin-top: 120px;
+    margin-top: 12px;
 }
 
 @keyframes bounce {
@@ -156,17 +145,15 @@ a:active {
 }
 
 .arrow {
-    bottom: 5%;
-    left: 50%;
-    margin-left: -20px;
+    margin-left: 37vw;
+    margin-right:auto;
     width: 40px;
-    height: 40px;
     cursor: pointer;
-    color: var(--lightgrey-color);
+    color: var(--black-color);
 }
 
 .arrow:hover {
-    color: wheat;
+    color: #ff5a3d;
 }
 
 .bounce {
@@ -175,10 +162,50 @@ a:active {
     animation: bounce 4s infinite;
 }
 
-.title-about {
+#look{
+    font-size:1.4em;
+    font-family: var(--20thcentery-font);
+    margin-top:7vh;
+    margin-left:20vw;
+    padding:0.5em;
+    margin-right:auto;
+    border: 2px solid black;
+    color:#ff5a3d;
+}
+
+#learn{
+    font-size:1.3em;
+    margin-top:15vh;
+    margin-left:10vw;
+    margin-right:10vw;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+/* end of the header */
+
+
+
+/* start of computer section */
+
+.main-about-box {
+    margin-bottom: 60px;
+}
+
+#computerAnim,
+#emailAnim,
+#passwordAnim {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom:10%;
+    width: 40%;
+}
+
+
+
+.title-main {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -186,7 +213,7 @@ a:active {
     margin: 0 auto;
 }
 
-.about-text {
+.text-styling {
     width: 70%;
     margin: 0 auto;
     font-family: var(--quicksand-font);
@@ -196,26 +223,11 @@ a:active {
     line-height: 35px;
 }
 
-.about-text p:first-letter {
-    float: left;
-    font-size: 3.5em;
-    line-height: 60px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 3px;
-    font-family: var(--garamond-font);
-    text-shadow: var(--lightgrey-color) -1px 0, var(--lightgrey-color) 0 -1px, var(--lightgrey-color) 0 1px, var(--lightgrey-color) -1px -2px;
-}
-
-#about-h1-1st-title {
-    font-family: var(--garamond-font);
-    margin-top: 40px;
-    font-size: 3em;
-}
-
-.h1-h3 {
-    text-align: center;
-    margin-bottom: 40px;
+.headingSvg{
+    width: 70%;
+    margin-left:17%;
+    margin-right:auto;
+    padding-bottom: 5%;
 }
 
 .about-text span {
@@ -257,47 +269,37 @@ footer {
     .navbar {
         align-items: center;
     }
+
     .nav #dropdown {
         display: flex;
         background-color: rgba(0, 0, 0, 0);
         height: auto;
         justify-content: flex-end;
     }
+
     .nav #dropdown a {
         display: block;
-        /*        flex: 1;*/
         text-align: center;
     }
+
     #dropdown {
         display: block;
     }
+
     label {
         display: none;
     }
+
     #logo {
         width: 17em;
     }
+
     .flex-menu {
         flex-direction: row;
         margin-right: 3vw;
         letter-spacing: 1px;
     }
-    .front-page-video-desktop {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-row-gap: 5%;
-        width: 35vw;
-        height: 20vh;
-        margin-top: 50vh;
-        margin-left: 5vw;
-        text-align: left;
-    }
-    #front-page-youtube-button-desktop:hover {
-        font-size: 1.020em;
-    }
-    .front-page-youtube-button {
-        margin-right: 26%;
-    }
+
     #background-image-index-desktop {
         background-image: url(../img/background-img/guitar.jpeg);
         width: 100vw;
@@ -310,6 +312,7 @@ footer {
         height: 100vh;
         background-size: cover;
     }
+
     /*ABOUT PAGE DESKTOP*/
     .buttons-about {
         grid-area: buttons;
@@ -317,6 +320,7 @@ footer {
 
     .fa-chevron-down {
         margin-top: 20vh;
+        margin-left:40vw;
     }
     .main-about-box {
         display: flex;
@@ -337,8 +341,8 @@ footer {
         width: 88%;
         margin-top: 15%;
     }
-    #title-desktop {
-        margin-top: 40vh;
+    #title-main-desktop {
+        margin-top: 10vh;
     }
     #about-child-guitar,
     #about-jonas-now {
@@ -353,68 +357,20 @@ footer {
     #about-child-2nd {
         margin-top: 15%;
     }
-    /*MUSIC PAGE DESKTOP*/
-    .album-playlist {
-        width: 50%;
-        margin: 0 auto;
-    }
-    /*CONCERTS PAGE DESKTOP*/
-    #concerts-content {
-        width: 60%;
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-    div.month-year {
-        margin: 0 10% 0 10%;
-    }
-    article#concert-desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "day venue city details-btn" ". . . details";
-        margin: 0 auto;
-    }
-    article#concert-desktop {
-        margin-bottom: 20px;
-        font-size: 1.3em;
-    }
-    #date-desktop {
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-    }
-    #venue-desktop {
-        flex-grow: 3;
-        justify-content: center;
-    }
-    #city-country-desktop {
-        flex-grow: 2;
-    }
-    #price-desktop {
-        flex-grow: 1;
-    }
-    #day-desktop {
-        font-size: 2.1em;
-        letter-spacing: 2px;
-    }
-    div#date-desktop {
-        margin: 0 5% 0 5%;
-    }
-    .city {
-        margin: 0;
-    }
-    /*CONTACT MODAL DESKTOP*/
-    #modal-content-contact-desktop {
-        width: 40%;
-    }
+
     /*FOOTER*/
     #footer {
         width: 40%;
     }
 
-    svg{
-        width:100vh;
+    #main-title-desktop{
+        margin-left: 60px;
+        width:900px;
     }
 }
 
+#background{
+    width: 100vw;
+    height: 100vh;
+}
 
