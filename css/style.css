@@ -156,9 +156,22 @@ main{
     height:500px;
 }
 
+.email{
+    width:38%;
+    margin-left:247px;
+    height:286px;
+}
+
+.password{
+    width:57%;
+    margin-top:-60px;
+    margin-left:120px;
+    height:434px;
+}
 .svgTitle{
     padding-top:40px;
     padding-bottom:40px;
+    width:50%;
 
 }
 /* THIS IS THE MOBILE VERSION */
