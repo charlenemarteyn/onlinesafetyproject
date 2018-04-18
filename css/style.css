@@ -51,7 +51,7 @@ body {
 .didYouLookBehind{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 70%;
+    width: 50%;
     height:100%;
     padding-top:16vh;
     margin:0 auto;
@@ -139,27 +139,17 @@ main{
     clear: both;
 }
 
-#computerAnim,
-#emailAnim,
-#passwordAnim {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 10%;
-    padding-top: 10%;
-    width: 40%;
-}
-
 .fit{
     width:90%;
-    margin-top:59px;
-    margin-left:20px;
-    height:500px;
+    margin-top:15vh;
+    margin-left:2vw;
+    height:145vh;
 }
 
 .email{
     width:38%;
-    margin-left:247px;
-    height:286px;
+    margin-left:18vw;
+    height:88vh;
 }
 
 .password{
@@ -173,6 +163,16 @@ main{
     padding-bottom:40px;
     width:50%;
 
+}
+.shop{
+   width:65%;
+    margin-left:152px;
+    height:200px;
+}
+
+.some{
+    width:80%;
+    margin-top:50px;
 }
 /* THIS IS THE MOBILE VERSION */
 
@@ -226,6 +226,12 @@ main{
         width: 100%;
     }
 
+    .fit{
+    width:90%;
+    margin-top:59px;
+    margin-left:20px;
+    height:500px;
+}
 }
 
 
