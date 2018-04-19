@@ -52,7 +52,7 @@ body {
 }
 
 .imgBackground {
-        background-image: url(../img/nnnnebronnoke-cagle-609875-unsplash.jpg);
+        background-image: url(../img/backgrounddesktop.jpg);
         width: 100vw;
         height: 100vh;
         background-repeat: no-repeat;
@@ -147,7 +147,7 @@ h3{
 /********************* IOANA ********************* */
 .content{
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
 }
 
@@ -174,38 +174,6 @@ section{
     color:#fcfcfc;
 }
 
-#email{
-    margin-top: -10vh;
-}
-
-#password{
-    margin-top:-8vh;
-    margin-bottom:12vh;
-}
-
-#onlineshop{
-    margin-top:-17vh;
-}
-
-#WOT{
-    margin-top:-17vh;
-    margin-bottom:12vh;
-}
-
-footer{
-    position: relative;
-    padding: 20px;
-    margin-top: -14vh;
-    background-color: #1c1860;
-    width: 100vw;
-    height: 15vh;
-    padding-left: 20vw;
-    padding-right:18vw;
-}
-
-#footer{
-    color:#fcfcfc;
-}
 /********************************************************/
 /* THIS IS THE MOBILE VERSION */
 

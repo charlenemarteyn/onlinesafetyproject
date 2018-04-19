@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            width:100vw;
+            height:100vh;
+        }
+    .glitch {
+	position: relative;
+	width: var(--glitch-width);
+	max-width: 400px;
+	height: var(--glitch-height);
+	max-height: calc(400px * 1.25);
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.glitch:hover {
+	cursor: pointer;
+}
+
+.glitch__img {
+	position: absolute;
+	top: calc(-1 * var(--gap-vertical));
+	left: calc(-1 * var(--gap-horizontal));
+	width: calc(100% + var(--gap-horizontal) * 2);
+	height: calc(100% + var(--gap-vertical) * 2);
+	background: url(img/backgrounddesktop.jpg) no-repeat 50% 0;
+	background-color: var(--blend-color-1);
+	background-size: cover;
+	background-blend-mode: var(--blend-mode-1);
+}
+        /* Set the background colors for the glitch images*/
+.glitch__img:nth-child(2) {
+	background-color: var(--blend-color-2);
+	background-blend-mode: var(--blend-mode-2);
+}
+
+.glitch__img:nth-child(3) {
+	background-color: var(--blend-color-3);
+	background-blend-mode: var(--blend-mode-3);
+}
+
+.glitch__img:nth-child(4) {
+	background-color: var(--blend-color-4);
+	background-blend-mode: var(--blend-mode-4);
+}
+
+.glitch__img:nth-child(5) {
+	background-color: var(--blend-color-5);
+	background-blend-mode: var(--blend-mode-5);
+}
+
+.glitch__img:nth-child(n+2) {
+	opacity: 0;
+}
+
+.glitch:hover .glitch__img:nth-child(n+2) {
+	opacity: 1;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="glitch glitch--style-1">
+        <div class="glitch__img"></div>
+        <div class="glitch__img"></div>
+        <div class="glitch__img"></div>
+        <div class="glitch__img"></div>
+        <div class="glitch__img"></div>
+    </div>
+
+
+
+    <script src=""></script>
+</body>
+</html>
